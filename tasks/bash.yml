@@ -1,0 +1,9 @@
+- name: Restore bash config
+  become: false
+  copy:
+    src: files/bash/.bashrc
+    dest: /home/juniorsems/.bashrc
+    owner: juniorsems
+    group: juniorsems
+    mode: '0644'
+

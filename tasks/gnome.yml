@@ -1,0 +1,5 @@
+- name: Restore GNOME settings for user
+  become: false
+  shell: |
+    dconf load / < {{ playbook_dir }}/files/dconf-settings.ini || true
+

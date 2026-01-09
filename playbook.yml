@@ -1,0 +1,12 @@
+- name: Fedora GNOME Desktop Setup
+  hosts: localhost
+  become: true
+  vars_files:
+    - vars.yml
+
+  tasks:
+    - import_tasks: tasks/dnf.yml
+    - import_tasks: tasks/bash.yml
+    - import_tasks: tasks/gnome-extensions.yml
+    - import_tasks: tasks/gnome.yml
+    - import_tasks: tasks/flatpak.yml

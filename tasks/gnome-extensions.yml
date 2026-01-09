@@ -1,0 +1,8 @@
+- name: Install and enable GNOME extensions
+  become: false
+  shell: |
+    for ext in {{ gnome_extensions | join(" ") }}; do
+      gnome-extensions install --force \
+      https://extensions.gnome.org/extension-data/${ext}.shell-extension.zip || true
+      gnome-extensions enable "$ext" || true
+    done

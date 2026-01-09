@@ -1,0 +1,29 @@
+- name: Install system packages
+  dnf:
+    name:
+      - gnome-tweaks
+      - gnome-extensions-app
+      - gnome-shell-extension-appindicator
+      - git
+      - curl
+      - unzip
+      - nodejs
+      - python3-pip
+      - gcc-c++
+      - fastfetch
+      - htop
+      - inxi
+      - nmap
+      - gparted
+      - wget2-wget
+      - vlc
+    state: present
+    
+    
+    
+    
+    
+    
+    
+    
+
