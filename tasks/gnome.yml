@@ -1,5 +1,12 @@
+- name: Check if dconf settings file exists
+  become: false
+  stat:
+    path: "{{ playbook_dir }}/files/dconf-settings.ini"
+  register: dconf_file
+
 - name: Restore GNOME settings for user
   become: false
   shell: |
-    dconf load / < {{ playbook_dir }}/files/dconf-settings.ini || true
-
+    dconf load / < {{ playbook_dir }}/files/dconf-settings.ini
+  when: dconf_file.stat.exists
+  ignore_errors: true

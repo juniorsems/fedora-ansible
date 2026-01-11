@@ -2,7 +2,10 @@
   become: false
   shell: |
     for ext in {{ gnome_extensions | join(" ") }}; do
+      echo "Installing extension: $ext"
       gnome-extensions install --force \
       https://extensions.gnome.org/extension-data/${ext}.shell-extension.zip || true
       gnome-extensions enable "$ext" || true
     done
+  register: gnome_ext_result
+  changed_when: "'already installed' not in gnome_ext_result.stdout"
