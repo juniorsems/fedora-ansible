@@ -24,4 +24,3 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 export DRI_PRIME=0
-export DRI_PRIME=0
