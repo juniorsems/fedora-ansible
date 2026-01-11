@@ -4,7 +4,6 @@
     name: flathub
     state: present
     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
-  ignore_errors: true
 
 - name: Install Flatpak apps
   become: true
@@ -12,4 +11,3 @@
     name: "{{ flatpak_apps }}"
     state: present
   ignore_errors: true
-
