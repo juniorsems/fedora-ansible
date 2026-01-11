@@ -1,5 +1,5 @@
 - name: Ensure Flathub remote is added
-  become: false
+  become: true
   flatpak_remote:
     name: flathub
     state: present
@@ -7,8 +7,9 @@
   ignore_errors: true
 
 - name: Install Flatpak apps
-  become: false
+  become: true
   flatpak:
     name: "{{ flatpak_apps }}"
     state: present
   ignore_errors: true
+

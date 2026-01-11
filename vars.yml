@@ -1,27 +1,10 @@
 gnome_extensions:
   - user-theme@gnome-shell-extensions.gcampax.github.com
-  - extension-list@tu.berry
+  - dash-to-dock@micxgx.gmail.com
   - clipboard-indicator@tudmotu.com
-  - clipqr@drien.com
+  - appindicatorsupport@rgcjonas.gmail.com
   - blur-my-shell@aunetx
-  - compiz-alike-magic-lamp-effect@hermes83.github.com
-  - burn-my-windows@schneegans.github.com
-  - dash2dock-lite@icedman.github.com
-  - desktop-cube@schneegans.github.com
-  - dynamic-calendar-and-clocks-icons-reborn@thecalamityjoe87.github.com
-  - network-stats@gnome.noroadsleft.xyz
-  - tiling-assistant@leleat-on-github
-  - compiz-windows-effect@hermes83.github.com
-  - ding@rastersoft.com
-  - add-to-desktop@tommimon.github.com
-  - wifiqrcode@glerro.pm.me
-  - kiwimenu@kemma
-  - apps-menu@gnome-shell-extensions.gcampax.github.com
-  - background-logo@fedorahosted.org
-  - launch-new-instance@gnome-shell-extensions.gcampax.github.com
-  - places-menu@gnome-shell-extensions.gcampax.github.com
-  - window-list@gnome-shell-extensions.gcampax.github.com
-  
+
 flatpak_apps:
   - com.github.neithern.g4music
   - com.usebottles.bottles
