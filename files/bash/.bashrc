@@ -25,6 +25,3 @@ fi
 unset rc
 export DRI_PRIME=0
 export DRI_PRIME=0
-alias chromium='chromium --disable-gpu'
-alias brave='brave-browser --disable-gpu'
-alias discord='discord --disable-gpu'
